@@ -1,0 +1,92 @@
+.section2 {
+    padding: 120px 0 70px 0;
+
+
+    .content {
+
+
+        .content-inside {
+            width: 100%;
+            padding: 0 12px;
+
+            .big-box {
+                width: 100%;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                margin-top: 30px;
+                gap: 25px;
+
+                .s2-box {
+                    padding: 20px 40px;
+                    border-radius: 6px;
+                    border: 2px solid #eef0f6;
+                    display: flex;
+                    align-items: center;
+                    gap: 30px;
+
+                    &:hover {
+                        background: #2b4eff;
+                    }
+
+                    &:hover {
+
+                        .box-icon {
+
+                            i {
+                                color: #fff;
+
+                            }
+                        }
+
+                        .box-text {
+
+                            a {
+                                color: #fff;
+
+                            }
+
+                            p {
+                                color: #fff;
+
+                            }
+                        }
+                    }
+
+                    .box-icon {
+
+
+                        i {
+                            font-size: 40px;
+                            color: #2b4eff;
+                        }
+                    }
+
+                    .box-text {
+                        line-height: 1.2;
+
+                        a {
+                            color: #0e1133;
+                            margin-top: 0;
+                            font-weight: 700;
+                            font-size: 20px;
+                            transition: 1s;
+                        }
+
+                        p {
+                            font-weight: 500;
+                            margin-bottom: 0;
+                            font-size: 16px;
+                            color: #6d6e75;
+                            // line-height: 26px;
+                        }
+
+                    }
+
+
+                }
+            }
+
+        }
+
+    }
+}

@@ -1,0 +1,182 @@
+.section1 {
+    position: relative;
+    width: 100%;
+    min-height: 850px;
+    background-color: #edeef3;
+    padding-top: 180px;
+
+    .img-1 {
+        position: absolute;
+        left: 3%;
+        animation: rain 20s infinite;
+    }
+
+    .img-2 {
+        top: 25%;
+        position: absolute;
+    }
+
+    .img-3 {
+        position: absolute;
+        right: 0;
+        top: 50%;
+    }
+
+    .content {
+
+        .s1-left {
+            width: 50%;
+            margin-top: 70px;
+
+           
+
+            p {
+                font-size: 22px;
+                color: #0e1133;
+                padding-right: 130px;
+                line-height: 30px;
+                margin-bottom: 28px;
+            }
+
+            a {
+                display: inline-block;
+                height: 50px;
+                line-height: 52px;
+                text-align: center;
+                padding: 0 25px;
+                color: #fff;
+                background: #2b4eff;
+                border-radius: 4px;
+                font-weight: 500;
+                text-transform: lowercase;
+
+                &:hover {
+                    box-shadow: 0 10px 24px #0417764d;
+                }
+            }
+        }
+
+        .s1-right {
+            width: 50%;
+            display: flex;
+            gap: 30px;
+            position: relative;
+
+            .s1-r-b-img {
+                max-width: 400px;
+                max-height: 460px;
+                border-radius: 40px 4px;
+                box-shadow: 0 30px 60px #010b3c24;
+                z-index: 2;
+            }
+
+            .s1-r-s-img {
+                max-width: 200px;
+                max-height: 240px;
+                border-radius: 4px 40px;
+                box-shadow: 0 30px 60px #010b3c24;
+                margin-top: 50px;
+            }
+
+            .bg-img1 {
+                top: -50px;
+                right: 15%;
+                position: absolute;
+                z-index: -1;
+            }
+
+            .bg-img2 {
+                bottom: -47px;
+                right: 1%;
+                z-index: -1;
+                position: absolute;
+            }
+
+            .bg-img3 {
+                position: absolute;
+                z-index: 1;
+                bottom: -25px;
+                left: -30px;
+                animation: hero-dot-1 5s linear 0s infinite alternate;
+            }
+
+            .animate-div {
+                position: absolute;
+                bottom: 60px;
+                right: 0px;
+                padding: 15px 25px 20px;
+                background: #ffffff;
+                border-radius: 4px;
+                box-shadow: 0 30px 60px #010b3c24;
+                animation-duration: 2.5s;
+                animation-fill-mode: both;
+                animation-iteration-count: infinite;
+                animation-name: hero-bounce;
+                z-index: 3;
+
+                h4 {
+                    font-size: 16px;
+                    font-weight: 600;
+                    margin-bottom: 0;
+                    line-height: 1;
+                }
+            }
+        }
+    }
+}
+
+@keyframes rain {
+    50% {
+        transform: rotate(360deg);
+
+    }
+
+    100% {
+        transform: rotate(0deg);
+
+
+    }
+
+}
+
+
+
+@keyframes hero-dot-1 {
+    0% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(-100px);
+    }
+
+}
+
+@keyframes hero-bounce {
+    0% {
+        transform: translateY(0px);
+
+    }
+
+    20% {
+        transform: translateY(-30px);
+    }
+
+    30% {
+        transform: translateY(0px);
+    }
+
+    40% {
+        transform: translateY(-15px);
+    }
+
+    50% {
+        transform: translateY(0px);
+
+    }
+
+    100% {
+        transform: translateY(0px);
+
+    }
+}

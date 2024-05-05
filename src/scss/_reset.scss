@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');
+
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   list-style: none;
+   transition: all .3s ease-out 0s;
+   font-family: "Hind", sans-serif;
+
+}
+
+a {
+   text-decoration: none;
+}
+
+.content {
+   width: 1200px;
+   margin: 0 auto;
+   display: flex;
+   // margin-top: 90px;
+}
+
+.title {
+
+   font-size: 60px;
+   line-height: 1;
+   margin-bottom: 8px;
+
+
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-family: Hind, sans-serif;
+   color: #0e1133;
+   margin-top: 0;
+   font-weight: 700;
+   line-height: 1.2;
+   transition: all .3s ease-out 0s;
+}
+
+.online {
+   position: relative;
+   z-index: 1;
+
+
+   .yellow-shape {
+      position: absolute;
+      bottom: 22px;
+      left: -8px;
+      z-index: -1;
+      animation: yellow-shape 2s infinite;
+   }
+}
+
+@keyframes yellow-shape {
+   0% {
+      width: 0%;
+
+   }
+
+   40% {
+      width: 100%;
+   }
+
+   100% {
+      width: 100%;
+   }
+}

@@ -1,0 +1,24 @@
+.section3 {
+    padding-bottom: 110px;
+    width: 100%;
+
+    .content {
+        width: 1200px;
+
+        .s3-b-b {
+            width: 100%;
+            padding: 0 12px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+
+
+            .s3-boxes{
+                padding: 50px 40px;
+            }
+
+
+         
+        }
+    }
+}
