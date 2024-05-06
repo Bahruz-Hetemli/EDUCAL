@@ -178,12 +178,11 @@
 
 
                 &::after {
+                    visibility: hidden;
                     top: 0;
-                    // bottom: auto;
-                    height: 0;
+                    height: 100%;
                     position: absolute;
                     content: "";
-                    // bottom: 0;
                     left: -3px;
                     width: 5%;
                     background: #2b4eff;
@@ -191,14 +190,15 @@
                     z-index: -500;
                     transition: all .3s ease-out 0s;
                     transform-origin: top;
-                    transform: scaleY(1);
+                    transform: scaleY(0);
 
                 }
 
                 &:hover::after{
-                    height: 100%;
+                   visibility: visible;
+                    // height: 100%;
                     transform-origin: bottom;
-                    transform: scaleY(0);
+                    transform: scaleY(1);
                 }
             }
 

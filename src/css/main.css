@@ -1199,8 +1199,9 @@ h6 {
   z-index: -500;
 }
 .section5 .s-content .s5-divs .div1::after {
+  visibility: hidden;
   top: 0;
-  height: 0;
+  height: 100%;
   position: absolute;
   content: "";
   left: -3px;
@@ -1210,10 +1211,10 @@ h6 {
   z-index: -500;
   transition: all 0.3s ease-out 0s;
   transform-origin: top;
-  transform: scaleY(1);
+  transform: scaleY(0);
 }
 .section5 .s-content .s5-divs .div1:hover::after {
-  height: 100%;
+  visibility: visible;
   transform-origin: bottom;
-  transform: scaleY(0);
+  transform: scaleY(1);
 }/*# sourceMappingURL=main.css.map */
