@@ -140,6 +140,11 @@
                         display: inline-block;
                         text-align: center;
 
+                        &:hover {
+                            color: #fff;
+                            box-shadow: 0 10px 24px #0417764d;
+                        }
+
                     }
 
                 }

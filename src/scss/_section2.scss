@@ -9,6 +9,63 @@
             width: 100%;
             padding: 0 12px;
 
+
+            .s2-title{
+                // display: flex;
+
+                .s2-p-link {
+                    float: right;
+
+                    a {
+                        color: #6d6e75;
+                        position: relative;
+                        font-size: 16px;
+                        // color: #6d6e75;
+                        font-weight: 500;
+                        padding-right: 21px;
+                        display: inline-block;
+                        font-family: "Hind", sans-serif;
+
+                        &:hover {
+                            color: #2b4eef;
+
+                            .first-arrow {
+                                right: 0;
+                                visibility: visible;
+                                opacity: 1;
+                            }
+
+                            .second-arrow {
+                                right: -10px;
+                                visibility: hidden;
+                                opacity: 0;
+                            }
+                        }
+
+                        i {
+                            font-size: 14px;
+                            position: absolute;
+                            top: 8px;
+                            transform: translateY(-50%);
+                            transition: all ease .2s;
+                            -webkit-transition: all ease .2s;
+                        }
+
+                        .first-arrow {
+                            right: 10%;
+                            visibility: hidden;
+                            opacity: 0;
+                        }
+
+                        .second-arrow {
+                            right: 0;
+                        }
+
+                    }
+
+                }
+            }
+
             .big-box {
                 width: 100%;
                 display: grid;
