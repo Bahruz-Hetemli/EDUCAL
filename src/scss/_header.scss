@@ -139,13 +139,12 @@
                 display: flex;
                 gap: 30px;
 
-                li {
-                    position: relative;
+                .underline {
 
                     &:hover a,
-                    i{
+                    i {
 
-                        color: #0e1133!important;
+                        color: #0e1133 !important;
                     }
 
 
@@ -168,6 +167,12 @@
                         left: auto;
                         transition: all .3s ease-out 0s;
                     }
+
+                }
+
+                li {
+                    position: relative;
+
 
 
 

@@ -228,20 +228,17 @@ h6 {
   display: flex;
   gap: 30px;
 }
-.header .header-right .h-r-links ul li {
-  position: relative;
-}
-.header .header-right .h-r-links ul li:hover a,
-.header .header-right .h-r-links ul li i {
+.header .header-right .h-r-links ul .underline:hover a,
+.header .header-right .h-r-links ul .underline i {
   color: #0e1133 !important;
 }
-.header .header-right .h-r-links ul li:hover::before {
+.header .header-right .h-r-links ul .underline:hover::before {
   width: 100%;
   left: 0;
   right: auto;
   transform-origin: right;
 }
-.header .header-right .h-r-links ul li::before {
+.header .header-right .h-r-links ul .underline::before {
   content: "";
   position: absolute;
   bottom: 38px;
@@ -251,6 +248,9 @@ h6 {
   right: 0;
   left: auto;
   transition: all 0.3s ease-out 0s;
+}
+.header .header-right .h-r-links ul li {
+  position: relative;
 }
 .header .header-right .h-r-links ul li:hover .fa-angle-down {
   color: #2b4eff;
