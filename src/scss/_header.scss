@@ -40,7 +40,7 @@
 
 
                 li {
-                    position: relative;
+                    // position: relative;
 
 
 
@@ -141,6 +141,36 @@
 
                 li {
                     position: relative;
+
+                    &:hover a,
+                    i{
+
+                        color: #0e1133!important;
+                    }
+
+
+
+                    &:hover::before {
+                        width: 100%;
+                        left: 0;
+                        right: auto;
+                        transform-origin: right;
+                    }
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        bottom: 38px;
+                        height: 1px;
+                        background-color: #0e1133;
+                        width: 0;
+                        right: 0;
+                        left: auto;
+                        transition: all .3s ease-out 0s;
+                    }
+
+
+
 
                     &:hover .fa-angle-down {
                         color: #2b4eff;
